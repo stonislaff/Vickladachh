@@ -1,0 +1,85 @@
+@import "../../global_scss/colors";
+@import "../../global_scss/fonts";
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  font-family: $default-font;
+  font-size: 14px;
+  background: $headerBackground;
+  height: 50px;
+  width: 100%;
+  min-width: 900px;
+  .navPanel{
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      .navMenu{
+        flex: 1;
+        span{
+          margin-right: 40px;
+          color: $headerFontColor;
+          border-bottom: 2px solid $underlineColor;
+          transition-duration: 0.3s;
+        }
+        span:hover{
+          border-radius: 15%;
+          border-bottom: 2px solid rgba(0, 0, 0, 0.55);
+          color: rgba(0, 0, 0, 0.45);
+        }
+        a{
+          transform: translate(10px,50px);
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.47);
+        }
+        a:hover{
+          text-shadow: none;
+        }
+        a.active{
+        }
+      }
+      .logo{
+        margin-left: 20px;
+        margin-right: 40px;
+        margin-bottom: 5px;
+        img{
+          width: 80px;
+          height: 30px;
+        }
+      }
+      .login{
+        margin-left: auto;
+        margin-right: 5%;
+        height: auto;
+        a{
+          color: $headerFontColor;
+          margin-right: 20px;
+          border: 1px solid #edc6ff;
+          border-radius: 50%;
+          border-top-left-radius: 50% 1%;
+          border-bottom-right-radius: 10% 5%;
+          background: rgba(210, 192, 255, 0.33);
+          font-size: 13px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          box-shadow: 5px 4px 7px 2px #899bd7;
+          transition-duration: 0.5s;
+          transition-timing-function: ease-in;
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.47);
+        }
+        a:hover{
+          border: 1px solid #9175c4;
+          background: rgba(161, 141, 217, 0.68);
+          box-shadow: 2px 2px 3px 1px #617acc;
+          color: rgba(255, 255, 255, 0.1);
+        }
+        span{
+          padding: 10px;
+        }
+      }
+  }
+}
